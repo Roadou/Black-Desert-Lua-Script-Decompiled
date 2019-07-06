@@ -1,0 +1,13 @@
+CloseButton = UI.getChildControl(Panel_Lord_Controller, "Button_Win_Close")
+RegionName = UI.getChildControl(Panel_Lord_Controller, "StaticText_RegionName")
+MakingRateProgressBar = UI.getChildControl(Panel_Lord_Controller, "Progress2_MakingRate")
+FishRateProgressBar = UI.getChildControl(Panel_Lord_Controller, "Progress2_FishRate")
+MakingRateText = UI.getChildControl(Panel_Lord_Controller, "StaticText_MakingRate")
+FishRateText = UI.getChildControl(Panel_Lord_Controller, "StaticText_FishRate")
+PlantControlButton = UI.getChildControl(Panel_Lord_Controller, "Button_PlantControl")
+FishControlButton = UI.getChildControl(Panel_Lord_Controller, "Button_FishControl")
+RainControlButton = UI.getChildControl(Panel_Lord_Controller, "Button_RainControl")
+CloseButton:addInputEvent("Mouse_LUp", "FGlobal_LordManagerClose()")
+function FGlobal_LordManagerClose()
+  Panel_Lord_Controller:SetShow(false)
+end
